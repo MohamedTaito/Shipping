@@ -15,6 +15,10 @@
     components: {
       SecondTabForm
     },
+      mounted() {
+        let del = document.getElementsByClassName("v-tabs-slider-wrapper");
+        del[0].remove();
+      },
       name: "index"
     }
 </script>

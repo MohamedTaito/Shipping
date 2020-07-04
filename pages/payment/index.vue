@@ -12,6 +12,10 @@
 <script>
   import ThirdTabForm from  "../../components/thirdTabForm/thirdTabFormIndex"
   export default {
+    mounted() {
+      let del = document.getElementsByClassName("v-tabs-slider-wrapper");
+      del[0].remove();
+    },
     components: {
       ThirdTabForm
     },
